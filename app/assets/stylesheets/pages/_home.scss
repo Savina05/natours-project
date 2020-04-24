@@ -5,6 +5,7 @@ $color-primary-dark: #28b485;
 
 $color-grey-dark: #777;
 $color-white: #FFF;
+$color-black: #000;
 
 *,
 *::after,
@@ -39,25 +40,24 @@ body {
   position: relative;
 
   clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
-}
 
-.header__logo-box {
-  position: absolute;
-  top: 4rem;
-  left: 4rem;
+  &__logo-box {
+    position: absolute;
+    top: 4rem;
+    left: 4rem;
+  }
 
-}
+  &__logo {
+    height: 3.5rem;
+  }
 
-.header__logo {
-  height: 3.5rem;
-}
-
-.header__text-box {
-  position: absolute;
-  top: 40%; // relatively of the parent element (in this case .header)
-  left: 50%; // relative of the parent element (in this case .header)
-  transform: translate(-50%, -50%); // this percentage refers to the div element itself
-  text-align: center;
+  &__text-box {
+    position: absolute;
+    top: 40%; // relatively of the parent element (in this case .header)
+    left: 50%; // relative of the parent element (in this case .header)
+    transform: translate(-50%, -50%); // this percentage refers to the div element itself
+    text-align: center;
+  }
 }
 
 .heading-primary {
@@ -150,12 +150,12 @@ body {
   &:hover {
     text-decoration: none;
     transform: translateY(-3px);
-    box-shadow: 0 1rem 2rem rgba(0,0,0,0.2); // x y blur color
+    box-shadow: 0 1rem 2rem rgba($color-black,0.2); // x y blur color
   }
 
   &:active {
     transform: translateY(-1px);
-    box-shadow: 0 .5rem 1rem rgba(0,0,0,0.2); // x y blur color
+    box-shadow: 0 .5rem 1rem rgba($color-black,0.2); // x y blur color
   }
 }
 
