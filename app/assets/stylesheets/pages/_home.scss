@@ -1,4 +1,10 @@
 // Specific CSS for your home-page
+$color-primary: #55C57A;
+$color-primary-light: #7ED56F;
+$color-primary-dark: #28b485;
+
+$color-grey-dark: #777;
+$color-white: #FFF;
 
 *,
 *::after,
@@ -17,7 +23,7 @@ body {
   font-weight: 400;
   font-size: 16px;
   line-height: 1.7;
-  color: #777;
+  color: $color-grey-dark;
   box-sizing: border-box;
 }
 
@@ -55,7 +61,7 @@ body {
 }
 
 .heading-primary {
-  color: #fff;
+  color: $color-white;
   text-transform: uppercase;
   backface-visibility: hidden;
   margin-bottom: 6rem;
@@ -154,7 +160,7 @@ body {
 }
 
 .bttn--white {
-  background-color: #fff;
+  background-color: $color-grey-dark;
   color: rgba(40,180,131,0.8);
 
   &:hover {
@@ -177,7 +183,7 @@ body {
 }
 
 .bttn--white::after {
-  background-color: #fff;
+  background-color: $color-white;
 }
 
 .bttn:hover::after {
