@@ -29,11 +29,11 @@
 
   &--white {
     background-color: $color-white;
-    color: rgba(40,180,131,0.8);
+    color: $color-grey-dark;
 
     &:hover {
       text-decoration: none;
-      color: rgba(40,180,131,0.8);
+      color: $color-grey-dark;
     }
 
     &::after {
