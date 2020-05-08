@@ -23,10 +23,16 @@
     width: 15rem;
     height: 15rem;
     float: left; // requires width and height
-    shape-outside: circle(50% at 50% 50%);
-    clip-path: circle(50% at 50% 50%);
     transform: skewX(12deg) translateX(-3rem); // with floated elements do not use margin
     position: relative;
+    overflow: hidden;
+    border-radius: 50%;
+
+    @supports (clip-path: polygon(0 0)) {
+      shape-outside: circle(50% at 50% 50%);
+      clip-path: circle(50% at 50% 50%);
+      border-radius: none;
+    }
 
     @include respond(phone) {
       transform: skewX(0) translateX(-3rem);
